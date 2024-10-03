@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHQ-9 Depression Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental health Assessment</h1>
+        <form action="/submit" method="post">
+            <label for="interest">Little interest or pleasure in doing things:</label><br>
+            <input type="number" id="interest" name="interest" min="0" max="3" required><br>
+
+            <label for="depressed">Feeling down, depressed, or hopeless:</label><br>
+            <input type="number" id="depressed" name="depressed" min="0" max="3" required><br>
+
+            <label for="sleep">Trouble falling or staying asleep, or sleeping too much:</label><br>
+            <input type="number" id="sleep" name="sleep" min="0" max="3" required><br>
+
+            <label for="fatigue">Feeling tired or having little energy:</label><br>
+            <input type="number" id="fatigue" name="fatigue" min="0" max="3" required><br>
+
+            <label for="appetite">Poor appetite or overeating:</label><br>
+            <input type="number" id="appetite" name="appetite" min="0" max="3" required><br>
+
+            <label for="worthlessness">Feeling bad about yourself – or that you are a failure or have let yourself or your family down:</label><br>
+            <input type="number" id="worthlessness" name="worthlessness" min="0" max="3" required><br>
+
+            <label for="concentration">Trouble concentrating on things, such as reading the newspaper or watching television:</label><br>
+            <input type="number" id="concentration" name="concentration" min="0" max="3" required><br>
+
+            <label for="restlessness">Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual:</label><br>
+            <input type="number" id="restlessness" name="restlessness" min="0" max="3" required><br>
+
+            <label for="suicidal">Thoughts that you would be better off dead, or thoughts of hurting yourself in some way:</label><br>
+            <input type="number" id="suicidal" name="suicidal" min="0" max="3" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
